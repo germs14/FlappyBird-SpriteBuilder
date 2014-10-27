@@ -15,11 +15,11 @@
 
 -(void)update:(CCTime)delta
 {
-    NSLog(@"ok 1");
+    //NSLog(@"ok 1");
     // put update code here
     // Increment the time since the last obstacle was added
     timeSinceObstacle += delta; // delta is approximately 1/60th of a second
-    NSLog(@"ok 2");
+    //NSLog(@"ok 2");
     // Check to see if two seconds have passed
     if (timeSinceObstacle > 2.0f)
     {
@@ -29,7 +29,7 @@
         // Then reset the timer.
         timeSinceObstacle = 0.0f;
     }
-    NSLog(@"ok 3");
+    //NSLog(@"ok 3");
 }
 
 // put new methods here

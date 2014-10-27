@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CCSprite9Slice.html">
+	<File path="Classes/CCMotionStreak.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CCSprite9Slice</TokenIdentifier>
-			<Abstract type="html">CCSprite9Slice will render a single image as nine quads, keeping the margins fixed, and stretching the center quads, to fit the content size.
-See CCSprite for usage.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CCMotionStreak</TokenIdentifier>
+			<Abstract type="html">CCMotionStreak creates a motion trail special effect.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="92"/>
@@ -14,185 +13,166 @@ See CCSprite for usage.</Abstract>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMargin:</TokenIdentifier>
-			<Abstract type="html">Sets the margin as a normalized percentage of the total image size.
-If set to 0.25, 25% of the left, right, top and bottom of the image, will be unstratched.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/setFastMode:</TokenIdentifier>
+			<Abstract type="html">Fast mode toggle.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float margin</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isFastMode) BOOL fastMode</Declaration>
 			
 			
-			<Anchor>//api/name/margin</Anchor>
+			<Anchor>//api/name/fastMode</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/margin</TokenIdentifier>
-			<Abstract type="html">Sets the margin as a normalized percentage of the total image size.
-If set to 0.25, 25% of the left, right, top and bottom of the image, will be unstratched.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/isFastMode</TokenIdentifier>
+			<Abstract type="html">Fast mode toggle.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float margin</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isFastMode) BOOL fastMode</Declaration>
 			
 			
-			<Anchor>//api/name/margin</Anchor>
+			<Anchor>//api/name/fastMode</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/margin</TokenIdentifier>
-			<Abstract type="html">Sets the margin as a normalized percentage of the total image size.
-If set to 0.25, 25% of the left, right, top and bottom of the image, will be unstratched.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCMotionStreak/fastMode</TokenIdentifier>
+			<Abstract type="html">Fast mode toggle.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float margin</Declaration>
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isFastMode) BOOL fastMode</Declaration>
 			
 			
-			<Anchor>//api/name/margin</Anchor>
+			<Anchor>//api/name/fastMode</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginLeft:</TokenIdentifier>
-			<Abstract type="html">Sets the left margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CCMotionStreak/streakWithFade:minSeg:width:color:textureFilename:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a motion streak object from the specified fade time, segments, stroke, color and texture file path values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float marginLeft</Declaration>
-			
-			
-			<Anchor>//api/name/marginLeft</Anchor>
+			<Declaration>+ (id)streakWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color textureFilename:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">Texture file path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/streakWithFade:minSeg:width:color:textureFilename:</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginLeft</TokenIdentifier>
-			<Abstract type="html">Sets the left margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/clm/CCMotionStreak/streakWithFade:minSeg:width:color:texture:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a motion streak object from the specified fade time, segments, stroke, color and texture values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float marginLeft</Declaration>
-			
-			
-			<Anchor>//api/name/marginLeft</Anchor>
+			<Declaration>+ (id)streakWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color texture:(CCTexture *)texture</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">Texture.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/streakWithFade:minSeg:width:color:texture:</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginLeft</TokenIdentifier>
-			<Abstract type="html">Sets the left margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/initWithFade:minSeg:width:color:textureFilename:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a motion streak object from the specified fade time, segments, stroke, color and texture file path values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float marginLeft</Declaration>
-			
-			
-			<Anchor>//api/name/marginLeft</Anchor>
+			<Declaration>- (id)initWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color textureFilename:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">Texture file path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFade:minSeg:width:color:textureFilename:</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginRight:</TokenIdentifier>
-			<Abstract type="html">Sets the right margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/initWithFade:minSeg:width:color:texture:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a motion streak object from the specified fade time, segments, stroke, color and texture values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float marginRight</Declaration>
-			
-			
-			<Anchor>//api/name/marginRight</Anchor>
+			<Declaration>- (id)initWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color texture:(CCTexture *)texture</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">Texture.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFade:minSeg:width:color:texture:</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginRight</TokenIdentifier>
-			<Abstract type="html">Sets the right margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/reset</TokenIdentifier>
+			<Abstract type="html">Remove all living segments.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) float marginRight</Declaration>
-			
-			
-			<Anchor>//api/name/marginRight</Anchor>
-            <NodeRef refid="92"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginRight</TokenIdentifier>
-			<Abstract type="html">Sets the right margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) float marginRight</Declaration>
+			<Declaration>- (void)reset</Declaration>
 			
 			
-			<Anchor>//api/name/marginRight</Anchor>
-            <NodeRef refid="92"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginTop:</TokenIdentifier>
-			<Abstract type="html">Sets the top margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) float marginTop</Declaration>
-			
-			
-			<Anchor>//api/name/marginTop</Anchor>
-            <NodeRef refid="92"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginTop</TokenIdentifier>
-			<Abstract type="html">Sets the top margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) float marginTop</Declaration>
-			
-			
-			<Anchor>//api/name/marginTop</Anchor>
-            <NodeRef refid="92"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginTop</TokenIdentifier>
-			<Abstract type="html">Sets the top margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) float marginTop</Declaration>
-			
-			
-			<Anchor>//api/name/marginTop</Anchor>
-            <NodeRef refid="92"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginBottom:</TokenIdentifier>
-			<Abstract type="html">Sets the bottom margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) float marginBottom</Declaration>
-			
-			
-			<Anchor>//api/name/marginBottom</Anchor>
-            <NodeRef refid="92"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginBottom</TokenIdentifier>
-			<Abstract type="html">Sets the bottom margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) float marginBottom</Declaration>
-			
-			
-			<Anchor>//api/name/marginBottom</Anchor>
-            <NodeRef refid="92"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginBottom</TokenIdentifier>
-			<Abstract type="html">Sets the bottom margin exclusively.</Abstract>
-			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) float marginBottom</Declaration>
-			
-			
-			<Anchor>//api/name/marginBottom</Anchor>
+			<Anchor>//api/name/reset</Anchor>
             <NodeRef refid="92"/>
 		</Token>
 		

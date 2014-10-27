@@ -17,7 +17,7 @@
 			<Abstract type="html">Target function that will be called.</Abstract>
 			<DeclaredIn>CCActionInstant.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) id targetCallback</Declaration>
+			<Declaration>@property (nonatomic, readwrite, weak) id targetCallback</Declaration>
 			
 			
 			<Anchor>//api/name/targetCallback</Anchor>
@@ -29,7 +29,7 @@
 			<Abstract type="html">Target function that will be called.</Abstract>
 			<DeclaredIn>CCActionInstant.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) id targetCallback</Declaration>
+			<Declaration>@property (nonatomic, readwrite, weak) id targetCallback</Declaration>
 			
 			
 			<Anchor>//api/name/targetCallback</Anchor>
@@ -41,7 +41,7 @@
 			<Abstract type="html">Target function that will be called.</Abstract>
 			<DeclaredIn>CCActionInstant.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readwrite, strong) id targetCallback</Declaration>
+			<Declaration>@property (nonatomic, readwrite, weak) id targetCallback</Declaration>
 			
 			
 			<Anchor>//api/name/targetCallback</Anchor>

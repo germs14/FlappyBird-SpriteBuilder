@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/CCParallaxNode.html">
+	<File path="Classes/CCEffectBlur.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/CCParallaxNode</TokenIdentifier>
-			<Abstract type="html">CCParallaxNode is a node that simulates a classic parallax scroller.</Abstract>
-			<DeclaredIn>CCParallaxNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectBlur</TokenIdentifier>
+			<Abstract type="html">CCEffectBlur performs blur operation on the pixels of the attached node.</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
             
 			
 			<NodeRef refid="77"/>
@@ -13,64 +13,87 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCParallaxNode/setParallaxArray:</TokenIdentifier>
-			<Abstract type="html">Array that holds the offset / ratio of the child nodes.</Abstract>
-			<DeclaredIn>CCParallaxNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/setBlurRadius:</TokenIdentifier>
+			<Abstract type="html">The size of the blur. This value is in the range [0..6].</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *parallaxArray</Declaration>
+			<Declaration>@property (nonatomic, assign) NSUInteger blurRadius</Declaration>
 			
 			
-			<Anchor>//api/name/parallaxArray</Anchor>
+			<Anchor>//api/name/blurRadius</Anchor>
             <NodeRef refid="77"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCParallaxNode/parallaxArray</TokenIdentifier>
-			<Abstract type="html">Array that holds the offset / ratio of the child nodes.</Abstract>
-			<DeclaredIn>CCParallaxNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/blurRadius</TokenIdentifier>
+			<Abstract type="html">The size of the blur. This value is in the range [0..6].</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *parallaxArray</Declaration>
+			<Declaration>@property (nonatomic, assign) NSUInteger blurRadius</Declaration>
 			
 			
-			<Anchor>//api/name/parallaxArray</Anchor>
+			<Anchor>//api/name/blurRadius</Anchor>
             <NodeRef refid="77"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/CCParallaxNode/parallaxArray</TokenIdentifier>
-			<Abstract type="html">Array that holds the offset / ratio of the child nodes.</Abstract>
-			<DeclaredIn>CCParallaxNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectBlur/blurRadius</TokenIdentifier>
+			<Abstract type="html">The size of the blur. This value is in the range [0..6].</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSArray *parallaxArray</Declaration>
+			<Declaration>@property (nonatomic, assign) NSUInteger blurRadius</Declaration>
 			
 			
-			<Anchor>//api/name/parallaxArray</Anchor>
+			<Anchor>//api/name/blurRadius</Anchor>
             <NodeRef refid="77"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CCParallaxNode/addChild:z:parallaxRatio:positionOffset:</TokenIdentifier>
-			<Abstract type="html">Adds the specified child node with z-order, ratio and offset values to the container.</Abstract>
-			<DeclaredIn>CCParallaxNode.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/init</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectBlur object with the following default parameters:
+blurRadius = 2</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
 			
-			<Declaration>- (void)addChild:(CCNode *)node z:(NSInteger)z parallaxRatio:(CGPoint)c positionOffset:(CGPoint)positionOffset</Declaration>
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffectBlur object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/initWithPixelBlurRadius:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectBlur object with the specified parameters.</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPixelBlurRadius:(NSUInteger)blurRadius</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>node</Name>
-					<Abstract type="html">Node to use.</Abstract>
-				</Parameter><Parameter>
-					<Name>z</Name>
-					<Abstract type="html">Z Order to use.</Abstract>
-				</Parameter><Parameter>
-					<Name>c</Name>
-					<Abstract type="html">Parallax ratio to use.</Abstract>
-				</Parameter><Parameter>
-					<Name>positionOffset</Name>
-					<Abstract type="html">Parallax offset to use.</Abstract>
+					<Name>blurRadius</Name>
+					<Abstract type="html">number of pixels blur will extend to (6 is the maximum, because we are limited by the number
+of varying variables that can be passed to a glsl program).</Abstract>
 				</Parameter>
 			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectBlur object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPixelBlurRadius:</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectBlur/effectWithBlurRadius:</TokenIdentifier>
+			<Abstract type="html">Creates a CCEffectBlur object with the specified parameters.</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
 			
-			<Anchor>//api/name/addChild:z:parallaxRatio:positionOffset:</Anchor>
+			<Declaration>+ (id)effectWithBlurRadius:(NSUInteger)blurRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blurRadius</Name>
+					<Abstract type="html">number of pixels blur will extend to (6 is the maximum, because we are limited by the number
+of varying variables that can be passed to a glsl program).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectBlur object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithBlurRadius:</Anchor>
             <NodeRef refid="77"/>
 		</Token>
 		
